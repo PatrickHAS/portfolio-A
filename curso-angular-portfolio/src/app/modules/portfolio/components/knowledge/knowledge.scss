@@ -34,5 +34,35 @@
 
       border-radius: 7px;
     }
+
+    .icon-tooltip {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icon-tooltip::after {
+      content: attr(data-title);
+      position: absolute;
+      bottom: 130%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      background: var(--white);
+      color: var(--black);
+
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 0.7rem;
+
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .icon-tooltip:hover::after {
+      opacity: 1;
+    }
   }
 }
