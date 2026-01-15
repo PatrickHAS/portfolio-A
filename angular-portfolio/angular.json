@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "curso-angular-portfolio": {
+    "angular-portfolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -21,7 +21,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/curso-angular-portfolio",
+            "outputPath": "dist/angular-portfolio",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "curso-angular-portfolio:build:production"
+              "buildTarget": "angular-portfolio:build:production"
             },
             "development": {
-              "buildTarget": "curso-angular-portfolio:build:development"
+              "buildTarget": "angular-portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"

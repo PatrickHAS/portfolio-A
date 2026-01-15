@@ -1,11 +1,11 @@
 {
-  "name": "curso-angular-portfolio",
+  "name": "angular-portfolio",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --configuration production",
-    "deploy": "ng build --configuration production --base-href=/portfolio-A/ && npx gh-pages -d dist/curso-angular-portfolio/browser -r https://github.com/PatrickHAS/portfolio-A.git",
+    "deploy": "ng build --configuration production --base-href=/portfolio-A/ && npx gh-pages -d dist/angular-portfolio/browser -r https://github.com/PatrickHAS/portfolio-A.git",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -34,7 +34,7 @@
     "@angular/router": "^21.0.0",
     "@fortawesome/fontawesome-free": "^7.1.0",
     "rxjs": "~7.8.0",
-    "tslib": "^2.3.0"
+    "tslib": "^2.8.1"
   },
   "devDependencies": {
     "@angular/build": "^21.0.2",

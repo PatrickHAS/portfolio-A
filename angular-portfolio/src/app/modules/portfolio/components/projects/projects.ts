@@ -11,7 +11,7 @@ import { DialogProjects } from '../dialog/dialog-projects/dialog-projects';
   styleUrl: './projects.scss',
 })
 export class Projects {
-  #dialog = inject(MatDialog);
+  dialog = inject(MatDialog);
 
   public arrayProjects = signal<IProjects[]>([
     {
@@ -62,7 +62,7 @@ export class Projects {
   ]);
 
   public openDialog(data: IProjects) {
-    this.#dialog.open(DialogProjects, {
+    this.dialog.open(DialogProjects, {
       data,
       panelClass: EDialogPainelClass.PROJECTS,
     });
