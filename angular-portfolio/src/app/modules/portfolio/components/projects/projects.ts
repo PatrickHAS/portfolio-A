@@ -59,6 +59,21 @@ export class Projects {
         },
       ],
     },
+    {
+      src: 'assets/img/projects/task-list-null.png',
+      alt: 'Projeto Task List',
+      title: 'Task List',
+      with: '100px',
+      height: '51px',
+      description:
+        '<p><strong>Task List</strong> é uma aplicação desenvolvida em Angular com foco na organização e gerenciamento de tarefas do dia a dia. O projeto foi estruturado utilizando componentização, com comunicação entre componentes através de <strong>@Input</strong> e <strong>@Output</strong>, garantindo um fluxo de dados claro e desacoplado.</p> <p> A aplicação permite adicionar, listar e remover tarefas de forma dinâmica, proporcionando uma experiência simples e intuitiva ao usuário. O desenvolvimento seguiu boas práticas do Angular, priorizando reutilização de componentes, <strong>manutenção do código</strong> e <strong>clareza na arquitetura</strong>.</p> <p> Este projeto demonstra minha capacidade de trabalhar com <strong>Angular</strong>, <strong>TypeScript</strong> e conceitos fundamentais de comunicação entre componentes, sendo uma base sólida para aplicações front-end mais complexas.</p>',
+      links: [
+        {
+          name: 'Conheça a Task List',
+          href: 'https://patrickhas.github.io/to-do-list-A/',
+        },
+      ],
+    },
   ]);
 
   public openDialog(data: IProjects) {
